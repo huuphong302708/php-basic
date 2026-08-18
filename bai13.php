@@ -80,17 +80,13 @@
             'website' => 'freetuts.net'
         );
 
-        // Trả về true
         var_dump(array_key_exists('username', $searcharray));
-
-        // Trả về false
         var_dump(array_key_exists('otherkey', $searcharray));
 
          echo "<br><br/>";
          $array = array('freetuts.net', 'freetuts.net');
          $result = array_unique($array);
 
-         // Kết quả mảng chỉ còn 1 giá trị freetuts.net
          var_dump($result);
 
 
@@ -156,7 +152,7 @@
          $a=array("red","green","blue","yellow","brown");
          
          print_r(array_slice($a,3));
-         
+
          print_r(array_slice($a, 0, 3));
          print_r(array_slice($a, 1, 3));
          print_r(array_slice($a, 2, 3));
